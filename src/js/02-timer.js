@@ -29,22 +29,6 @@ flatpickr(datePicker, {
   },
 });
 
-// const options = {
-//   enableTime: true,
-//   time_24hr: true,
-//   defaultDate: new Date(),
-//   minuteIncrement: 1,
-//   onClose(selectedDates) {
-//     if (selectedDates[0] >= new Date()) {
-//       Notiflix.Notify.success('Ready to start');
-//       btnStart.disabled = false;
-//     } else {
-//       Notiflix.Notify.failure('Please choose a date in the future');
-//       btnStart.disabled = true;
-//     }
-//   },
-// };
-
 timerOnBtn.addEventListener('click', () => {
   timerId = setInterval(() => {
     let countStart = new Date(datePicker.value) - new Date();
