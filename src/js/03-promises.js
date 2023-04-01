@@ -27,7 +27,7 @@ function onSubmit(e) {
           timeout: 10000,
         });
       });
-    userStep += userDelay;
+    userDelay += userStep;
   }
   e.currentTarget.reset();
 }
